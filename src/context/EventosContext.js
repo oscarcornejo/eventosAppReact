@@ -27,15 +27,15 @@ class EventosProvider extends Component {
     }
 
     render() {
-        return ( <
-            EventosContext.Provider value = {
-                {
-                    eventos: this.state.eventos,
-                    obtenerEventos: this.obtenerEventos
-                }
-            } >
-            { this.props.children } <
-            /EventosContext.Provider>
+        return (
+            <EventosContext.Provider
+            value = {{
+                eventos: this.state.eventos,
+                obtenerEventos: this.obtenerEventos
+            }}
+            >
+                {this.props.children}
+            </EventosContext.Provider>
         );
     }
 }

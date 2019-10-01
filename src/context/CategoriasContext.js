@@ -30,17 +30,16 @@ class CategoriasProvider extends Component {
     }
 
     render() {
-        return ( <
-            CategoriasContext.Provider value = {
-                {
+        return ( 
+            <CategoriasContext.Provider 
+                value = {{
                     categorias: this.state.categorias
-                }
-            } >
+                }}
+            >
 
             { this.props.children }
 
-            <
-            /CategoriasContext.Provider>
+            </CategoriasContext.Provider>
         );
     }
 }
